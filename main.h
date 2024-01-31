@@ -49,7 +49,7 @@ int print_revs(va_list args);
 int print_rot13(va_list args);
 int _putchar(char c);
 
-
+int handle_length_modifiers(const char *format, int *i, va_list args);
 int printf_char(va_list args);
 int printf_string(va_list args);
 
