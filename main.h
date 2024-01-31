@@ -14,9 +14,6 @@
 #define F_HASH 8
 #define F_SPACE 16
 
-#ifndef MAIN_H
-#define MAIN_H
-
 /**
  * struct format - define a struct with typedef for a specifier & fct
  *
