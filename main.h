@@ -1,11 +1,11 @@
 #ifndef MAIN_H
-#define MAIN_H_
+#define MAIN_H
+
 #include <limits.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 
 /* FLAGS */
 #define F_MINUS 1
@@ -14,6 +14,10 @@
 #define F_HASH 8
 #define F_SPACE 16
 
+#endif
+
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * struct format - define a struct with typedef for a specifier & fct
@@ -21,6 +25,7 @@
  * @id: specifier to the char
  * @f: fct associate to the specifier
  */
+
 typedef struct format
 {
 	char *id;
@@ -28,8 +33,6 @@ typedef struct format
 } match;
 
 int _printf(const char *format, ...);
-
-
 int get_flags(const char *format, int *i);
 int _strlen(char *str);
 int _strlenc(const char *str);
@@ -52,7 +55,6 @@ int _putchar(char c);
 int handle_length_modifiers(const char *format, int *i, va_list args);
 int printf_char(va_list args);
 int printf_string(va_list args);
-
 
 #endif
 
