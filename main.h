@@ -14,8 +14,6 @@
 #define F_HASH 8
 #define F_SPACE 16
 
-#endif
-
 #ifndef MAIN_H
 #define MAIN_H
 
