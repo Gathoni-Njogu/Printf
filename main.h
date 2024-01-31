@@ -7,6 +7,14 @@
 #include <unistd.h>
 
 
+/* FLAGS */
+#define F_MINUS 1
+#define F_PLUS 2
+#define F_ZERO 4
+#define F_HASH 8
+#define F_SPACE 16
+
+
 /**
  * struct format - define a struct with typedef for a specifier & fct
  *
@@ -21,6 +29,8 @@ typedef struct format
 
 int _printf(const char *format, ...);
 
+
+int get_flags(const char *format, int *i);
 int _strlen(char *str);
 int _strlenc(const char *str);
 int print_37(void);
