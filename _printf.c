@@ -34,7 +34,6 @@ Here:
 		{
 			if (p[j].id[0] == format[i] && p[j].id[1] == format[i + 1])
 			{
-				length += handle_length_modifiers(format, &i, args);
 				length += p[j].f(args);
 				i = i + 2;
 				goto Here;
